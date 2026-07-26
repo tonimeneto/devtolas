@@ -48,11 +48,10 @@ Execute apenas as etapas proporcionais ao tamanho e ao risco da tarefa.
 Respeite, nesta ordem:
 
 1. segurança e autorização do usuário;
-2. políticas comuns aplicáveis ao workspace;
-3. este arquivo;
-4. `docs/governanca.md`;
-5. demais documentos em `docs/`;
-6. tarefa atual.
+2. este arquivo;
+3. `docs/governanca.md`;
+4. demais documentos em `docs/`;
+5. tarefa atual.
 
 ## Evolução
 

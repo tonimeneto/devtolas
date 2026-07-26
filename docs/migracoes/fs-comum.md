@@ -1,13 +1,15 @@
 # Migração de Fs\Comum
 
+**Status:** concluída em 26/07/2026.
+
 ## Objetivo
 
 Avaliar os materiais compartilhados existentes em `Fs\Comum` e definir o
 tratamento de cada um, mantendo o DevTOLAS como única fonte ativa do método de
 engenharia.
 
-Este documento não autoriza copiar, mover, renomear ou excluir arquivos. A área
-`Fs\Comum` permanece somente leitura durante a classificação.
+Este documento de classificação não autorizou copiar, mover, renomear ou excluir
+arquivos. A área `Fs\Comum` permaneceu somente leitura durante essa etapa.
 
 ## Escopo avaliado
 
@@ -121,9 +123,9 @@ elas:
 Materiais migrados devem usar a estrutura vigente ou parâmetros que evitem
 acoplamento desnecessário a um caminho absoluto.
 
-O modelo atual de workspace referencia `Fs\Comum`. O modelo futuro deverá
-referenciar o projeto ativo e o DevTOLAS, mas essa troca somente ocorrerá depois
-da criação e validação do novo template.
+O modelo anterior de workspace referenciava `Fs\Comum`. Após a criação e a
+validação do novo template, os workspaces foram migrados para referenciar o
+projeto ativo e o DevTOLAS.
 
 ## Ordem de incorporação
 
@@ -136,16 +138,20 @@ da criação e validação do novo template.
 
 Cada item será tratado em uma mudança pequena e revisável.
 
-## Critérios para encerrar a transição
+## Critérios de encerramento
 
-`Fs\Comum` deixará de ser fonte do método quando:
+Os critérios foram atendidos:
 
-1. políticas e procedimentos aprovados existirem no DevTOLAS;
-2. templates oficiais forem fornecidos pelo DevTOLAS;
-3. workspaces consumidores apontarem para a nova fonte;
-4. não existirem referências ativas ao GPTOLAS;
-5. materiais históricos estiverem fora das raízes consultadas normalmente;
-6. uma integração piloto tiver sido validada.
+1. políticas e procedimentos aprovados existentes no DevTOLAS;
+2. templates oficiais fornecidos pelo DevTOLAS;
+3. workspaces consumidores apontando para a nova fonte;
+4. ausência de referências ativas ao GPTOLAS;
+5. materiais históricos fora das raízes consultadas normalmente;
+6. integração piloto validada.
 
 Conteúdos compartilhados que não representem método de engenharia podem
 permanecer fora do DevTOLAS, com responsabilidade explicitamente separada.
+
+Os workspaces ativos não carregam mais `Fs\Comum`. As áreas antigas de IA,
+metodologia e templates contêm apenas avisos de redirecionamento, e suas fontes
+originais foram preservadas no arquivo da transição.

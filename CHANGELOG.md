@@ -18,3 +18,5 @@ As mudanças relevantes do DevTOLAS serão registradas neste arquivo.
 - Templates oficiais de `AGENTS.md` e workspace para projetos consumidores.
 - Procedimentos de criação de projetos e continuidade entre sessões.
 - Incorporação das orientações aprovadas durante a migração do GPTOLAS.
+- Conclusão da migração dos workspaces e desativação das fontes metodológicas
+  anteriores.

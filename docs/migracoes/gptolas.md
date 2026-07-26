@@ -1,5 +1,7 @@
 # Migração do GPTOLAS
 
+**Status:** concluída em 26/07/2026.
+
 ## Objetivo
 
 Transferir para o DevTOLAS somente o conhecimento reutilizável e fundamentado do
@@ -13,7 +15,7 @@ decisões extraídas, sua avaliação e o destino dado a cada uma.
 - `GPTOLAS_MASTER_REFERENCE.md`, versão 2.0, de 04/07/2026;
 - `GPTOLAS_CHAT_PROTOCOL.md`, versão 1.0.0, de 04/07/2026.
 
-As fontes permanecem inalteradas em `Fs\Comum` durante esta etapa.
+Durante a classificação, as fontes permaneceram inalteradas em `Fs\Comum`.
 
 ## Critérios
 
@@ -74,13 +76,21 @@ Itens provisórios ou contextuais permanecem sem promoção automática.
 
 ## Desativação do GPTOLAS
 
-O GPTOLAS poderá sair do contexto ativo quando:
+Os critérios de saída foram atendidos:
 
-1. os itens validados estiverem incorporados ao DevTOLAS;
-2. referências ao GPTOLAS forem identificadas nos templates e projetos;
-3. consumidores ativos estiverem apontando para o DevTOLAS;
-4. a origem histórica for preservada fora das raízes abertas pelo Codex;
-5. o diretório antigo estiver congelado e sem consumidores.
+1. itens validados incorporados ao DevTOLAS;
+2. referências ao GPTOLAS identificadas nos templates e projetos;
+3. consumidores ativos apontando para o DevTOLAS;
+4. origem histórica preservada fora das raízes abertas pelo Codex;
+5. diretório antigo sem consumidores ativos.
 
-Mover, renomear ou remover o diretório original exige uma etapa separada e
-autorização explícita, pois `Fs\Comum` é uma área compartilhada protegida.
+O diretório original foi movido, com autorização, para:
+
+```text
+D:\MeusArquivos\30 - Fs\Arquivo\Metodologia\
+Transicao-DevTOLAS-2026-07-26\Fontes-Antigas\
+Comum\Metodologia\GPTOLAS
+```
+
+Esse local não participa dos workspaces ativos e existe somente para
+rastreabilidade histórica.

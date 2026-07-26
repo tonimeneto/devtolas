@@ -28,7 +28,8 @@ DevTOLAS/
 │   ├── continuidade.md
 │   └── migracoes/
 │       ├── gptolas.md
-│       └── fs-comum.md
+│       ├── fs-comum.md
+│       └── transicao-concluida.md
 └── templates/
     └── projeto/
         ├── AGENTS.md.template
@@ -45,7 +46,9 @@ DevTOLAS/
 
 ## Estado atual
 
-O DevTOLAS está consolidando seu sistema de desenvolvimento. Ele será a fonte da
-verdade do método de engenharia utilizado pelos projetos consumidores.
-Integrações, skills e automações serão adicionadas apenas quando houver uma
-necessidade concreta.
+O DevTOLAS é a fonte da verdade do método de engenharia utilizado pelos projetos
+consumidores. Os workspaces ativos usam o projeto específico e o DevTOLAS como
+referência de método.
+
+Skills e automações serão adicionadas apenas quando houver uma necessidade
+concreta.
