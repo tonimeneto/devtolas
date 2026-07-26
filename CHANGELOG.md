@@ -12,3 +12,4 @@ As mudanças relevantes do DevTOLAS serão registradas neste arquivo.
 - Processo inicial de evolução do conhecimento.
 - Definição do DevTOLAS como sistema de desenvolvimento e fonte da verdade do
   método de engenharia.
+- Classificação inicial do conhecimento legado do GPTOLAS.

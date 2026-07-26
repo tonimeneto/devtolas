@@ -22,7 +22,9 @@ DevTOLAS/
 │   ├── principios.md
 │   ├── metodo-de-desenvolvimento.md
 │   ├── evolucao-do-conhecimento.md
-│   └── sistema-de-desenvolvimento.md
+│   ├── sistema-de-desenvolvimento.md
+│   └── migracoes/
+│       └── gptolas.md
 └── templates/
     └── projeto/
 ```
