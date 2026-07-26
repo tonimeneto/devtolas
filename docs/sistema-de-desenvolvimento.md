@@ -52,13 +52,12 @@ adoção não ocorre apenas porque a orientação já foi utilizada anteriorment
 
 ## Relação com a estrutura comum existente
 
-A estrutura compartilhada em `Fs\Comum` antecede o DevTOLAS e permanece como
-referência durante a transição.
+A estrutura compartilhada em `Fs\Comum` antecede o DevTOLAS e continua
+armazenando recursos compartilhados que não representam o método de engenharia.
 
-O objetivo é evitar fontes concorrentes. Conteúdo que represente o método de
-engenharia deverá ter o DevTOLAS como fonte oficial depois de avaliado e
-incorporado. Nenhum conteúdo existente será movido ou removido sem análise e
-autorização explícitas.
+As políticas, os templates e a metodologia anteriores foram avaliados e
+migrados. O DevTOLAS é a única fonte metodológica ativa. O histórico foi
+preservado fora das raízes abertas normalmente nos workspaces.
 
 ## Fluxo de evolução
 
