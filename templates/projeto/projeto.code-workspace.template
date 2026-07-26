@@ -1,0 +1,30 @@
+{
+  "folders": [
+    {
+      "name": "PROJETO — NOME_DO_PROJETO",
+      "path": "../../../Projetos/NOME_DO_PROJETO"
+    },
+    {
+      "name": "DEVTOLAS — Método de Engenharia",
+      "path": "../../../Projetos/DevTolas"
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/.git": true,
+      "**/node_modules": true,
+      "**/dist": true,
+      "**/build": true,
+      "**/.env": true,
+      "**/.env.*": true
+    },
+    "search.exclude": {
+      "**/.git": true,
+      "**/node_modules": true,
+      "**/dist": true,
+      "**/build": true,
+      "**/.env": true,
+      "**/.env.*": true
+    }
+  }
+}
