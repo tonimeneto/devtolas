@@ -21,7 +21,8 @@ DevTOLAS/
 ├── docs/
 │   ├── principios.md
 │   ├── metodo-de-desenvolvimento.md
-│   └── evolucao-do-conhecimento.md
+│   ├── evolucao-do-conhecimento.md
+│   └── sistema-de-desenvolvimento.md
 └── templates/
     └── projeto/
 ```
@@ -29,14 +30,15 @@ DevTOLAS/
 ## Responsabilidades
 
 - `AGENTS.md`: orienta a atuação do Codex neste repositório.
-- `docs/`: registra princípios, método e governança do conhecimento.
+- `docs/`: registra o sistema de desenvolvimento, seus princípios, seu método e
+  a governança do conhecimento.
 - `templates/`: conterá apenas materiais reutilizáveis para integração de
   projetos.
 - `CHANGELOG.md`: registra mudanças relevantes na base.
 
 ## Estado atual
 
-Esta é a estrutura fundacional do projeto. Integração com projetos consumidores,
-skills e automações serão avaliadas apenas quando houver uma necessidade
-concreta.
-
+O DevTOLAS está consolidando seu sistema de desenvolvimento. Ele será a fonte da
+verdade do método de engenharia utilizado pelos projetos consumidores.
+Integrações, skills e automações serão adicionadas apenas quando houver uma
+necessidade concreta.
