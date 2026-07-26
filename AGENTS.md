@@ -50,8 +50,9 @@ Respeite, nesta ordem:
 1. segurança e autorização do usuário;
 2. políticas comuns aplicáveis ao workspace;
 3. este arquivo;
-4. documentação em `docs/`;
-5. tarefa atual.
+4. `docs/governanca.md`;
+5. demais documentos em `docs/`;
+6. tarefa atual.
 
 ## Evolução
 
@@ -61,4 +62,3 @@ Uma melhoria somente deve virar orientação comum quando:
 - possuir justificativa clara;
 - tiver seu estado registrado conforme `docs/evolucao-do-conhecimento.md`;
 - não contradizer uma orientação superior.
-

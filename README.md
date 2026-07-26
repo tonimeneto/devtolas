@@ -20,6 +20,7 @@ DevTOLAS/
 ├── CHANGELOG.md
 ├── docs/
 │   ├── principios.md
+│   ├── governanca.md
 │   ├── metodo-de-desenvolvimento.md
 │   ├── evolucao-do-conhecimento.md
 │   ├── sistema-de-desenvolvimento.md

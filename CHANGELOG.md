@@ -14,3 +14,4 @@ As mudanças relevantes do DevTOLAS serão registradas neste arquivo.
   método de engenharia.
 - Classificação inicial do conhecimento legado do GPTOLAS.
 - Classificação inicial dos materiais de engenharia existentes em `Fs\Comum`.
+- Governança oficial de contexto, segurança e operações do DevTOLAS.
