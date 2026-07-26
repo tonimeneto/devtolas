@@ -57,17 +57,20 @@ tratada como padrão contextual e não como princípio universal.
 | O usuário não deve precisar reconstruir sozinho o contexto | Validado | A continuidade deve ser clara, verificável e limitada ao projeto ativo. |
 | LLM nunca controla a lógica do sistema | Provisório | Reformular em termos de determinismo, supervisão e limites de confiança quando IA fizer parte do produto. |
 
-## Conhecimento aprovado ainda não incorporado
+## Conhecimento incorporado
 
-Os seguintes itens precisam ser transformados em orientações independentes antes
-de entrarem nos documentos oficiais:
+Os itens aprovados foram adaptados sem transportar regras arquiteturais
+específicas:
 
-1. documentação do projeto como fonte local;
-2. fronteiras confiáveis para regras críticas e segurança;
-3. ausência de fallback silencioso;
-4. continuidade entre sessões e tarefas.
+1. documentação do projeto como fonte local, em
+   `docs/metodo-de-desenvolvimento.md`;
+2. fronteiras confiáveis para regras críticas e segurança, em
+   `docs/metodo-de-desenvolvimento.md`;
+3. ausência de fallback silencioso, em
+   `docs/metodo-de-desenvolvimento.md`;
+4. continuidade entre sessões e tarefas, em `docs/continuidade.md`.
 
-Itens provisórios ou contextuais não serão promovidos automaticamente.
+Itens provisórios ou contextuais permanecem sem promoção automática.
 
 ## Desativação do GPTOLAS
 

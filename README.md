@@ -24,11 +24,15 @@ DevTOLAS/
 │   ├── metodo-de-desenvolvimento.md
 │   ├── evolucao-do-conhecimento.md
 │   ├── sistema-de-desenvolvimento.md
+│   ├── criacao-de-projetos.md
+│   ├── continuidade.md
 │   └── migracoes/
 │       ├── gptolas.md
 │       └── fs-comum.md
 └── templates/
     └── projeto/
+        ├── AGENTS.md.template
+        └── projeto.code-workspace.template
 ```
 
 ## Responsabilidades
@@ -36,8 +40,7 @@ DevTOLAS/
 - `AGENTS.md`: orienta a atuação do Codex neste repositório.
 - `docs/`: registra o sistema de desenvolvimento, seus princípios, seu método e
   a governança do conhecimento.
-- `templates/`: conterá apenas materiais reutilizáveis para integração de
-  projetos.
+- `templates/`: contém os materiais reutilizáveis para integração de projetos.
 - `CHANGELOG.md`: registra mudanças relevantes na base.
 
 ## Estado atual

@@ -1,0 +1,80 @@
+# AGENTS.md — NOME_DO_PROJETO
+
+## Identidade
+
+- Projeto: `NOME_DO_PROJETO`
+- Objetivo: `DESCREVER_OBJETIVO`
+- Caminho oficial: `CAMINHO_DO_PROJETO`
+- Repositório esperado: `INFORMAR_REPOSITORIO`
+
+## DevTOLAS
+
+Antes de atuar, consultar:
+
+- `CAMINHO_DEVTOLAS\docs\governanca.md`
+- `CAMINHO_DEVTOLAS\docs\metodo-de-desenvolvimento.md`
+
+O DevTOLAS fornece o método. Este projeto fornece domínio, arquitetura,
+tecnologias e decisões locais.
+
+## Limites
+
+- Trabalhar somente neste projeto e no DevTOLAS como referência.
+- Não acessar outros projetos sem autorização explícita.
+- Não alterar o DevTOLAS durante tarefas normais deste projeto.
+- Não copiar decisões, regras ou código de outro sistema.
+- Não criar dependência de execução ou importação direta com o DevTOLAS.
+
+## Fontes oficiais
+
+Definir, em ordem:
+
+1. `CAMINHO_OU_DOCUMENTO`;
+2. `CAMINHO_OU_DOCUMENTO`;
+3. código e testes do projeto.
+
+## Arquitetura e tecnologias
+
+- Aplicação: `PREENCHER_QUANDO_DECIDIDO`
+- Serviços: `PREENCHER_QUANDO_DECIDIDO`
+- Dados: `PREENCHER_QUANDO_DECIDIDO`
+- Infraestrutura: `PREENCHER_QUANDO_DECIDIDO`
+
+Não presumir que todas essas partes precisam existir.
+
+## Comandos de validação
+
+```text
+LISTAR_SOMENTE_COMANDOS_SEGUROS_DO_PROJETO
+```
+
+Não instalar dependências ou alterar serviços sem autorização compatível.
+
+## Git
+
+Antes de editar, confirmar raiz, branch, remoto sanitizado e alterações locais.
+
+Operações remotas, commits, troca de branch, alteração de remotos e inicialização
+de Git dependem de autorização compatível com a tarefa.
+
+## Informações sensíveis
+
+- Nunca abrir ou exibir `.env` sem necessidade e autorização específicas.
+- Nunca incluir tokens, senhas, certificados ou chaves em relatórios ou Git.
+- Outros caminhos sensíveis: `PREENCHER`.
+
+## Documentação
+
+- Arquitetura: `PREENCHER`
+- Requisitos e regras de negócio: `PREENCHER`
+- Decisões: `PREENCHER`
+- Dados e migrations: `PREENCHER`
+- Continuidade: `PREENCHER`
+
+## Critérios de conclusão
+
+- alteração limitada ao escopo;
+- validações proporcionais ao risco executadas;
+- documentação avaliada ou atualizada;
+- ausência de segredos e contaminação confirmada;
+- estado final relatado ao usuário.
