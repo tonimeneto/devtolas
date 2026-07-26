@@ -24,7 +24,8 @@ DevTOLAS/
 │   ├── evolucao-do-conhecimento.md
 │   ├── sistema-de-desenvolvimento.md
 │   └── migracoes/
-│       └── gptolas.md
+│       ├── gptolas.md
+│       └── fs-comum.md
 └── templates/
     └── projeto/
 ```
