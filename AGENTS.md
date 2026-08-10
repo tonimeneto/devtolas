@@ -2,9 +2,10 @@
 
 ## Propósito
 
-O DevTOLAS é uma base de engenharia de software reutilizável, documentada e
-evolutiva. Ele fornece método de trabalho para outros projetos, mas não substitui
-a documentação, a arquitetura nem as regras de negócio de cada projeto.
+O DevTOLAS é uma metodologia de desenvolvimento assistido por IA, reutilizável,
+documentada, evolutiva e independente da ferramenta utilizada. Ele fornece um
+método de trabalho para outros projetos, mas não substitui a documentação, a
+arquitetura nem as regras de negócio de cada projeto.
 
 ## Princípios de atuação
 

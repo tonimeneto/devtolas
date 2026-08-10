@@ -1,13 +1,19 @@
 # DevTOLAS
 
-O DevTOLAS é uma base de engenharia de software para uso com Codex no VS Code.
-Seu objetivo é oferecer um método consistente, documentado, reutilizável e
-evolutivo para o desenvolvimento de diferentes sistemas.
+O DevTOLAS é uma metodologia de desenvolvimento assistido por IA. Seu objetivo é
+oferecer um método consistente, documentado, reutilizável e evolutivo para o
+desenvolvimento de diferentes sistemas, independentemente da ferramenta
+utilizada.
+
+Atualmente, sua aplicação operacional ocorre principalmente com o Codex no
+VS Code. O Codex é um executor da metodologia, não parte de sua definição.
 
 O DevTOLAS não é:
 
 - um sistema de negócio;
 - um framework de aplicação;
+- um produto de IA;
+- uma plataforma de automação;
 - apenas uma coleção de prompts;
 - substituto da documentação de cada projeto.
 
@@ -39,16 +45,17 @@ DevTOLAS/
 ## Responsabilidades
 
 - `AGENTS.md`: orienta a atuação do Codex neste repositório.
-- `docs/`: registra o sistema de desenvolvimento, seus princípios, seu método e
-  a governança do conhecimento.
+- `docs/`: registra a metodologia de desenvolvimento, seus princípios, seu
+  método e a governança do conhecimento.
 - `templates/`: contém os materiais reutilizáveis para integração de projetos.
 - `CHANGELOG.md`: registra mudanças relevantes na base.
 
 ## Estado atual
 
-O DevTOLAS é a fonte da verdade do método de engenharia utilizado pelos projetos
+O DevTOLAS é a fonte da verdade da metodologia comum utilizada pelos projetos
 consumidores. Os workspaces ativos usam o projeto específico e o DevTOLAS como
 referência de método.
 
-Skills e automações serão adicionadas apenas quando houver uma necessidade
-concreta.
+Integrações com ferramentas, skills e automações pertencem à aplicação
+operacional. Elas serão adicionadas apenas quando houver necessidade concreta e
+benefício demonstrável, sem se tornarem fundamentos da metodologia.

@@ -1,13 +1,13 @@
-# Sistema de desenvolvimento DevTOLAS
+# Metodologia de desenvolvimento DevTOLAS
 
 ## Objetivo
 
-O DevTOLAS é o sistema comum de desenvolvimento utilizado para conduzir projetos
-de software com um método consistente, documentado e evolutivo.
+O DevTOLAS é a metodologia comum utilizada para conduzir projetos de software
+com assistência de IA de forma consistente, documentada e evolutiva.
 
-Ele é o cérebro de engenharia: organiza como o trabalho é analisado, planejado,
-implementado, validado, documentado e aprimorado. Ele não executa o papel do
-sistema desenvolvido e não substitui suas decisões específicas.
+Ele organiza como o trabalho é analisado, planejado, implementado, validado,
+documentado e aprimorado. Não executa o papel do sistema desenvolvido e não
+substitui suas decisões específicas.
 
 ## Fonte da verdade
 
@@ -17,6 +17,16 @@ Projetos consumidores podem adaptar a aplicação do método ao próprio context
 mas não devem manter cópias independentes das orientações comuns. Melhorias
 reutilizáveis devem retornar ao DevTOLAS para beneficiar os projetos atuais e
 futuros.
+
+## Independência de ferramenta
+
+Os conceitos, os princípios e o fluxo da metodologia não dependem de uma
+ferramenta específica. Codex, outros assistentes, skills e automações são formas
+possíveis de executá-la.
+
+Na versão atual, o Codex no VS Code é a principal aplicação operacional. As
+instruções específicas dessa aplicação devem permanecer separadas do núcleo
+conceitual sempre que a distinção for relevante.
 
 ## Camadas
 
@@ -28,7 +38,7 @@ Pertence ao DevTOLAS:
 - fluxo de desenvolvimento;
 - padrões de análise, implementação, testes, revisão e auditoria;
 - governança da documentação e do conhecimento;
-- templates e skills reutilizáveis;
+- templates e mecanismos operacionais reutilizáveis, quando justificados;
 - critérios para evolução do próprio método.
 
 ### 2. Aplicação local
@@ -62,7 +72,7 @@ preservado fora das raízes abertas normalmente nos workspaces.
 ## Fluxo de evolução
 
 ```text
-Experiência em um projeto
+Experiência em projeto ou evidência relevante
           ↓
 Identificação de aprendizado reutilizável
           ↓
@@ -73,7 +83,9 @@ Incorporação ao DevTOLAS
 Aplicação nos projetos consumidores
 ```
 
-Conhecimento específico permanece no projeto de origem.
+Conhecimento específico permanece no projeto de origem. Ideias ainda sem
+evidência suficiente podem ser registradas como hipóteses, mas não devem ser
+promovidas automaticamente a orientações comuns.
 
 ## Precedência no projeto consumidor
 
@@ -89,8 +101,8 @@ deve alterar silenciosamente a fonte comum.
 
 ## Limites da versão inicial
 
-Nesta fase, o DevTOLAS é uma base documental e operacional para o Codex no
-VS Code. Ainda não é:
+Nesta fase, o DevTOLAS é uma metodologia documentada, aplicada operacionalmente
+principalmente pelo Codex no VS Code. Ainda não é:
 
 - um framework de aplicação;
 - uma biblioteca compartilhada em tempo de execução;

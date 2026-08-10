@@ -10,8 +10,8 @@ As mudanças relevantes do DevTOLAS serão registradas neste arquivo.
 - Princípios iniciais de engenharia.
 - Método inicial de desenvolvimento.
 - Processo inicial de evolução do conhecimento.
-- Definição do DevTOLAS como sistema de desenvolvimento e fonte da verdade do
-  método de engenharia.
+- Definição do DevTOLAS como metodologia de desenvolvimento assistido por IA e
+  fonte da verdade do método de engenharia.
 - Classificação inicial do conhecimento legado do GPTOLAS.
 - Classificação inicial dos materiais de engenharia existentes em `Fs\Comum`.
 - Governança oficial de contexto, segurança e operações do DevTOLAS.
@@ -20,3 +20,11 @@ As mudanças relevantes do DevTOLAS serão registradas neste arquivo.
 - Incorporação das orientações aprovadas durante a migração do GPTOLAS.
 - Conclusão da migração dos workspaces e desativação das fontes metodológicas
   anteriores.
+
+### Alterado
+
+- Refinada a identidade do DevTOLAS para separar o núcleo metodológico,
+  independente de ferramenta, de sua aplicação operacional atual com Codex no
+  VS Code.
+- Esclarecido que propostas podem nascer de diferentes evidências, mas hipóteses
+  não se tornam orientações comuns sem justificativa e validação proporcionais.
