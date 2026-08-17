@@ -31,11 +31,7 @@ DevTOLAS/
 │   ├── evolucao-do-conhecimento.md
 │   ├── sistema-de-desenvolvimento.md
 │   ├── criacao-de-projetos.md
-│   ├── continuidade.md
-│   └── migracoes/
-│       ├── gptolas.md
-│       ├── fs-comum.md
-│       └── transicao-concluida.md
+│   └── continuidade.md
 └── templates/
     └── projeto/
         ├── AGENTS.md.template
