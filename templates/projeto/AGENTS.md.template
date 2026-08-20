@@ -1,80 +1,75 @@
 # AGENTS.md — NOME_DO_PROJETO
 
-## Identidade
+## Projeto
 
-- Projeto: `NOME_DO_PROJETO`
+- Nome: `NOME_DO_PROJETO`
 - Objetivo: `DESCREVER_OBJETIVO`
 - Caminho oficial: `CAMINHO_DO_PROJETO`
 - Repositório esperado: `INFORMAR_REPOSITORIO`
 
+Trabalhe somente neste projeto. Não acesse outros projetos nem transfira entre
+eles código, regras, arquitetura ou decisões sem autorização explícita.
+
+## Contexto progressivo
+
+Não carregue documentação indiscriminadamente. Consulte somente as fontes
+necessárias à tarefa atual.
+
+Quando a tarefa exigir conhecimento do produto, localize em `docs/` a
+documentação relevante e leia apenas os documentos que influenciam a decisão.
+O código e os testes completam o estado observável do projeto.
+
+Se existirem agentes de IA implementados pelo produto, suas especificações
+pertencem a `docs/agentes/`; este arquivo contém apenas instruções para o agente
+de desenvolvimento.
+
 ## DevTOLAS
 
-Antes de atuar, consultar:
+O DevTOLAS é a fonte oficial do método de engenharia e está disponível para
+consulta em `CAMINHO_DEVTOLAS`. Consulte somente a norma correspondente quando
+a natureza da tarefa exigir orientação metodológica comum.
 
-- `CAMINHO_DEVTOLAS\docs\governanca.md`
-- `CAMINHO_DEVTOLAS\docs\metodo-de-desenvolvimento.md`
+- uso de LLM, contexto, prompts, RAG, memória ou agentes de IA:
+  `CAMINHO_DEVTOLAS\docs\uso-de-llm.md`;
+- classificação ou organização documental:
+  `CAMINHO_DEVTOLAS\docs\documentacao.md`;
+- governança metodológica:
+  `CAMINHO_DEVTOLAS\docs\governanca.md`.
 
-O DevTOLAS fornece o método. Este projeto fornece domínio, arquitetura,
-tecnologias e decisões locais.
+Não altere o DevTOLAS durante tarefas normais deste projeto e não crie
+dependência de execução ou importação direta com ele.
 
-## Limites
+## Regras específicas do projeto
 
-- Trabalhar somente neste projeto e no DevTOLAS como referência.
-- Não acessar outros projetos sem autorização explícita.
-- Não alterar o DevTOLAS durante tarefas normais deste projeto.
-- Não copiar decisões, regras ou código de outro sistema.
-- Não criar dependência de execução ou importação direta com o DevTOLAS.
+REGRAS_ESPECIFICAS_DO_PROJETO
 
-## Fontes oficiais
+Não invente regras locais para preencher esta seção. Decisões permanentes do
+produto pertencem à documentação do projeto.
 
-Definir, em ordem:
+## Fontes oficiais locais
 
-1. `CAMINHO_OU_DOCUMENTO`;
-2. `CAMINHO_OU_DOCUMENTO`;
-3. código e testes do projeto.
+FONTES_OFICIAIS_DO_PROJETO
 
-## Arquitetura e tecnologias
-
-- Aplicação: `PREENCHER_QUANDO_DECIDIDO`
-- Serviços: `PREENCHER_QUANDO_DECIDIDO`
-- Dados: `PREENCHER_QUANDO_DECIDIDO`
-- Infraestrutura: `PREENCHER_QUANDO_DECIDIDO`
-
-Não presumir que todas essas partes precisam existir.
-
-## Comandos de validação
+## Validação
 
 ```text
-LISTAR_SOMENTE_COMANDOS_SEGUROS_DO_PROJETO
+COMANDOS_SEGUROS_DE_VALIDACAO
 ```
 
-Não instalar dependências ou alterar serviços sem autorização compatível.
+Execute validações proporcionais ao risco. Não instale dependências nem altere
+serviços sem autorização compatível.
 
-## Git
+## Segurança e Git
 
-Antes de editar, confirmar raiz, branch, remoto sanitizado e alterações locais.
+- Antes de editar, confirme raiz Git, branch e alterações locais.
+- Commits, operações remotas, troca de branch e alteração de remotos dependem
+  de autorização compatível.
+- Não abra nem exponha arquivos de ambiente, tokens, senhas, certificados ou
+  chaves sem necessidade e autorização específicas.
+- Preserve alterações existentes e mantenha a mudança limitada ao escopo.
 
-Operações remotas, commits, troca de branch, alteração de remotos e inicialização
-de Git dependem de autorização compatível com a tarefa.
+## Conclusão
 
-## Informações sensíveis
-
-- Nunca abrir ou exibir `.env` sem necessidade e autorização específicas.
-- Nunca incluir tokens, senhas, certificados ou chaves em relatórios ou Git.
-- Outros caminhos sensíveis: `PREENCHER`.
-
-## Documentação
-
-- Arquitetura: `PREENCHER`
-- Requisitos e regras de negócio: `PREENCHER`
-- Decisões: `PREENCHER`
-- Dados e migrations: `PREENCHER`
-- Continuidade: `PREENCHER`
-
-## Critérios de conclusão
-
-- alteração limitada ao escopo;
-- validações proporcionais ao risco executadas;
-- documentação avaliada ou atualizada;
-- ausência de segredos e contaminação confirmada;
-- estado final relatado ao usuário.
+Ao terminar, informe alterações, validações, documentação impactada e
+pendências. Confirme que não houve contaminação entre projetos nem exposição de
+segredos.

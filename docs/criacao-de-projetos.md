@@ -45,6 +45,8 @@ conhecidas e mantendo marcadores explícitos para decisões pendentes.
 As instruções locais devem:
 
 - apontar para a governança do DevTOLAS;
+- funcionar como roteador para a documentação necessária, sem reproduzi-la
+  integralmente;
 - definir o projeto e seu escopo;
 - listar fontes oficiais;
 - registrar arquitetura e tecnologias somente depois de decididas;
@@ -61,8 +63,15 @@ O workspace deve conter somente:
 1. o projeto ativo;
 2. o DevTOLAS como referência de método.
 
+Essa estrutura de duas raízes permanece válida durante a transição. A
+arquitetura futura pretendida utiliza uma única raiz de projeto e será aplicada
+somente quando a migração correspondente for autorizada.
+
 O DevTOLAS é somente leitura durante tarefas normais do projeto. Melhorias
 comuns devem ser tratadas separadamente no repositório DevTOLAS.
+
+A criação de documentação deve seguir [documentacao.md](documentacao.md), sem
+gerar diretórios ou arquivos vazios apenas para completar uma taxonomia.
 
 ## Git
 

@@ -87,9 +87,18 @@ Conhecimento específico permanece no projeto de origem. Ideias ainda sem
 evidência suficiente podem ser registradas como hipóteses, mas não devem ser
 promovidas automaticamente a orientações comuns.
 
-## Precedência no projeto consumidor
+## Autoridade e carregamento no projeto consumidor
 
-Ao desenvolver um sistema, aplicar:
+Ao desenvolver um sistema, o DevTOLAS permanece como autoridade do método
+comum. Isso não determina a ordem técnica de carregamento do Codex nem implica
+herança automática da documentação metodológica.
+
+O Codex carrega primeiro seu global pessoal e o `AGENTS.md` do projeto ativo.
+Depois de entender a tarefa, consulta a documentação local necessária e o
+DevTOLAS somente quando houver norma metodológica aplicável. Skills e scripts
+são carregados ou executados apenas quando acionados pela necessidade da tarefa.
+
+Entre as fontes efetivamente aplicáveis, respeitar:
 
 1. segurança e autorização;
 2. método comum do DevTOLAS;
@@ -98,6 +107,15 @@ Ao desenvolver um sistema, aplicar:
 
 Uma decisão local pode adaptar o método quando o contexto justificar, mas não
 deve alterar silenciosamente a fonte comum.
+
+## Normas transversais
+
+- [governanca.md](governanca.md) define autoridade, isolamento e carregamento
+  progressivo de contexto;
+- [documentacao.md](documentacao.md) define classificação e organização
+  documental;
+- [uso-de-llm.md](uso-de-llm.md) define o uso eficiente e seguro de LLM em
+  qualquer componente do Ecossistema DEV.
 
 ## Limites da versão inicial
 

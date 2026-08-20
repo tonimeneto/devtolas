@@ -26,13 +26,33 @@ a investigação ao necessário para esclarecer o escopo.
 Uma sessão de desenvolvimento deve operar em um único projeto ativo. A troca de
 projeto encerra o contexto anterior e exige um novo contexto.
 
-## Precedência
+## Autoridade metodológica e carregamento de contexto
 
-Aplicar as orientações nesta ordem:
+O DevTOLAS é a autoridade metodológica do Ecossistema DEV. Essa autoridade não
+significa que sua documentação seja herdada ou carregada automaticamente pelo
+Codex apenas porque o DevTOLAS existe no ecossistema ou em uma raiz do
+workspace.
+
+A ordem técnica de carregamento do Codex é progressiva:
+
+```text
+global pessoal do Codex
+    → `AGENTS.md` do contexto ou projeto ativo
+    → documentação local necessária à tarefa
+    → DevTOLAS, quando houver norma metodológica aplicável
+    → skill acionada
+    → script necessário
+```
+
+O `AGENTS.md` de um projeto deve funcionar como roteador de contexto, não como
+repositório de todo o conhecimento. O Codex não deve consultar toda a
+documentação disponível por padrão.
+
+Depois de carregadas as fontes aplicáveis, respeitar esta autoridade:
 
 1. segurança, privacidade e autorização do usuário;
-2. governança do DevTOLAS;
-3. `AGENTS.md` do projeto ativo;
+2. método comum do DevTOLAS;
+3. instruções do `AGENTS.md` do projeto ativo;
 4. documentação oficial do projeto;
 5. código, testes e estado observável;
 6. tarefa atual.
@@ -76,6 +96,49 @@ Deve permanecer no projeto:
 - dados operacionais;
 - credenciais e identificadores;
 - decisões que dependam do contexto local.
+
+## Contrato de classificação do contexto
+
+Antes de criar ou decidir onde armazenar uma instrução, documento, skill ou
+script, classificar a informação e usar o destino correspondente:
+
+```text
+Preferência pessoal ou comportamento universal do Codex
+    → `C:\Users\anton\.codex\AGENTS.md`
+
+Administração de `D:\MeusArquivos`
+    → `D:\MeusArquivos\AGENTS.md`
+
+Método comum e normas transversais de engenharia
+    → DevTOLAS
+
+Comportamento específico do Codex em um projeto
+    → `Projeto\AGENTS.md`
+
+Conhecimento permanente do produto
+    → `Projeto\docs`
+
+Procedimento operacional reutilizável
+    → `Skill\SKILL.md`
+
+Operação mecânica e determinística usada por uma skill
+    → `Skill\scripts`
+```
+
+Essas camadas devem referenciar a fonte adequada em vez de duplicar seu
+conteúdo. Skills descrevem procedimentos reutilizáveis; scripts executam as
+partes mecânicas e determinísticas desses procedimentos.
+
+Normas transversais de engenharia aplicáveis a todos os projetos pertencem ao
+DevTOLAS, não ao global pessoal do Codex nem aos projetos individuais.
+
+A arquitetura futura pretendida para workspaces de projeto utiliza uma única
+raiz. Durante a transição, a estrutura atual de duas raízes permanece válida e
+não implica carregamento automático da documentação do DevTOLAS.
+
+A classificação detalhada e as regras de fonte normativa única estão em
+[documentacao.md](documentacao.md). Componentes que utilizam modelos de
+linguagem devem seguir [uso-de-llm.md](uso-de-llm.md).
 
 ## Segurança e privacidade
 

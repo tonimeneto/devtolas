@@ -10,6 +10,9 @@ Consultar as fontes oficiais do projeto antes de tomar decisões. Quando
 documentação e comportamento observado divergirem, registrar o conflito em vez
 de escolher silenciosamente uma das fontes.
 
+Quando a tarefa envolver LLM, aplicar a decisão de necessidade e o contexto
+mínimo suficiente definidos em [uso-de-llm.md](uso-de-llm.md).
+
 ## 2. Planejar
 
 Definir a menor mudança capaz de atingir o objetivo e identificar como ela será
@@ -39,6 +42,7 @@ Revisar segurança, regressões, consistência, duplicação e aderência ao obj
 ## 6. Documentar
 
 Atualizar somente a documentação impactada pela mudança.
+Classificar novos artefatos conforme [documentacao.md](documentacao.md).
 
 ## 7. Avaliar o aprendizado
 
