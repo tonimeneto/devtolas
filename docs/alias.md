@@ -11,8 +11,8 @@
   `ESD`             Ecossistema DEV   Ecossistema       `D:\MeusArquivos`
 
   `DVT`             DevTOLAS          Método /          `D:\MeusArquivos\Fs\Projetos\DevTolas`
-                                      governança de     
-                                      engenharia        
+                                      governança de
+                                      engenharia
 
   `LV`              Lovable           Plataforma        Lovable
 
