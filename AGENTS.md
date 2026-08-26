@@ -62,3 +62,12 @@ Uma melhoria somente deve virar orientação comum quando:
 - possuir justificativa clara;
 - tiver seu estado registrado conforme `docs/evolucao-do-conhecimento.md`;
 - não contradizer uma orientação superior.
+
+
+## Regra global — conteúdo para copiar e colar
+
+Sempre que produzir conteúdo destinado a ser copiado pelo usuário para outra ferramenta, consulte e cumpra obrigatoriamente:
+
+D:\MeusArquivos\Fs\Projetos\DevTolas\docs\conteudo-para-copiar-e-colar.md
+
+Esta regra é global e se aplica independentemente do projeto, ferramenta ou destino do conteúdo.
