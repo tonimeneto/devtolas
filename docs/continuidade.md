@@ -54,6 +54,10 @@ O pacote de continuidade é um apoio temporário. Antes de continuar:
 
 O repositório e a documentação vigente prevalecem sobre um resumo desatualizado.
 
+Quando o projeto mantiver estado operacional explícito, ele deve seguir
+[estado-vigente.md](estado-vigente.md). Continuidade é uma ponte temporária; o
+estado vigente é a visão canônica do trabalho em andamento.
+
 ## Encerramento
 
 Ao finalizar uma tarefa, informar:

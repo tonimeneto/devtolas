@@ -1,73 +1,49 @@
 # AGENTS.md — DevTOLAS
 
-## Propósito
+## Escopo
 
-O DevTOLAS é uma metodologia de desenvolvimento assistido por IA, reutilizável,
-documentada, evolutiva e independente da ferramenta utilizada. Ele fornece um
-método de trabalho para outros projetos, mas não substitui a documentação, a
-arquitetura nem as regras de negócio de cada projeto.
+Este arquivo controla o trabalho no repositório DevTOLAS. O repositório contém
+o método comum de engenharia do Ecossistema DEV; não contém arquitetura, regras
+de negócio nem estado operacional dos projetos consumidores.
 
-## Princípios de atuação
+Trabalhe na raiz `D:\MeusArquivos\Fs\Projetos\DevTolas` e preserve alterações
+preexistentes que não pertençam à tarefa.
 
-Ao trabalhar neste repositório:
+## Roteamento
 
-- priorize simplicidade, clareza e manutenção;
-- evolua a base de forma incremental;
-- evite estruturas ou automações sem necessidade comprovada;
-- diferencie conhecimento comum de decisões específicas de projetos;
-- não transfira regras de negócio entre projetos;
-- preserve o histórico das decisões relevantes;
-- trate práticas existentes como passíveis de revisão;
-- consulte a documentação deste repositório antes de propor mudanças.
+Consulte somente a norma necessária:
 
-## Fluxo de trabalho
+- autoridade, autorização, isolamento, segurança e Git: `docs/governanca.md`;
+- classificação e localização de informação: `docs/documentacao.md`;
+- fluxo de engenharia e fechamento de mudanças: `docs/metodo-de-desenvolvimento.md`;
+- estado operacional: `docs/estado-vigente.md`;
+- uso de LLM e seleção de contexto: `docs/uso-de-llm.md`;
+- continuidade entre sessões: `docs/continuidade.md`;
+- transferência entre contextos: `docs/handoff-contextos.md`;
+- evolução de normas comuns: `docs/evolucao-do-conhecimento.md`;
+- criação de projetos: `docs/criacao-de-projetos.md`.
 
-Sempre que aplicável:
+Em criação, manutenção, diagnóstico, correção, refatoração, testes e auditorias
+técnicas pertinentes de interfaces conversacionais com LLM, é obrigatória a
+consulta a `docs/uso-de-llm.md`, fonte normativa única dessa arquitetura. Sua
+aplicação aos projetos consumidores respeita o escopo autorizado de cada tarefa.
 
-1. analisar;
-2. planejar;
-3. implementar;
-4. testar;
-5. auditar;
-6. documentar;
-7. avaliar se houve aprendizado reutilizável.
+A precedência técnica das instruções é determinada pelo Codex. A autoridade de
+cada fonte e os limites da tarefa pertencem a `docs/governanca.md`.
 
-Execute apenas as etapas proporcionais ao tamanho e ao risco da tarefa.
+## Regras específicas deste repositório
 
-## Limites
+- Mantenha o método independente de ferramenta e tecnologia quando a matéria
+  for realmente transversal.
+- Incorpore conhecimento de outro projeto somente quando a tarefa autorizar e
+  a avaliação de `docs/evolucao-do-conhecimento.md` demonstrar reutilização.
+- Preserve o histórico necessário das decisões metodológicas sem mantê-lo como
+  orientação vigente.
+- Trate melhorias comuns neste repositório, separadamente das tarefas normais
+  dos projetos consumidores.
 
-- Não transformar o DevTOLAS em um framework sem necessidade.
-- Não adicionar dependência de tecnologia específica como padrão universal.
-- Não incorporar conteúdo de outro projeto sem autorização e validação de que
-  ele é realmente reutilizável.
-- Não alterar a área comum compartilhada durante tarefas deste projeto.
-- Não executar operações Git externas, como `pull`, `push` ou alteração de
-  remotos, sem autorização compatível com a tarefa.
+## Validação
 
-## Fontes de orientação
-
-Respeite, nesta ordem:
-
-1. segurança e autorização do usuário;
-2. este arquivo;
-3. `docs/governanca.md`;
-4. demais documentos em `docs/`;
-5. tarefa atual.
-
-## Evolução
-
-Uma melhoria somente deve virar orientação comum quando:
-
-- puder ser aplicada sem depender do domínio de um projeto;
-- possuir justificativa clara;
-- tiver seu estado registrado conforme `docs/evolucao-do-conhecimento.md`;
-- não contradizer uma orientação superior.
-
-
-## Regra global — conteúdo para copiar e colar
-
-Sempre que produzir conteúdo destinado a ser copiado pelo usuário para outra ferramenta, consulte e cumpra obrigatoriamente:
-
-D:\MeusArquivos\Fs\Projetos\DevTolas\docs\conteudo-para-copiar-e-colar.md
-
-Esta regra é global e se aplica independentemente do projeto, ferramenta ou destino do conteúdo.
+Após mudanças, valide links, consistência entre as normas afetadas e o estado do
+Git. Quando a alteração substituir uma responsabilidade existente, aplique o
+fechamento definido em `docs/metodo-de-desenvolvimento.md`.

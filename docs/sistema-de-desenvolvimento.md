@@ -89,24 +89,9 @@ promovidas automaticamente a orientações comuns.
 
 ## Autoridade e carregamento no projeto consumidor
 
-Ao desenvolver um sistema, o DevTOLAS permanece como autoridade do método
-comum. Isso não determina a ordem técnica de carregamento do Codex nem implica
-herança automática da documentação metodológica.
-
-O Codex carrega primeiro seu global pessoal e o `AGENTS.md` do projeto ativo.
-Depois de entender a tarefa, consulta a documentação local necessária e o
-DevTOLAS somente quando houver norma metodológica aplicável. Skills e scripts
-são carregados ou executados apenas quando acionados pela necessidade da tarefa.
-
-Entre as fontes efetivamente aplicáveis, respeitar:
-
-1. segurança e autorização;
-2. método comum do DevTOLAS;
-3. instruções e decisões do projeto ativo;
-4. documentação e código da tarefa atual.
-
-Uma decisão local pode adaptar o método quando o contexto justificar, mas não
-deve alterar silenciosamente a fonte comum.
+Autoridade, autorização, precedência técnica e carregamento progressivo são
+definidos somente em [governanca.md](governanca.md). Estado e substituição de
+decisões são definidos em [estado-vigente.md](estado-vigente.md).
 
 ## Normas transversais
 
@@ -115,7 +100,16 @@ deve alterar silenciosamente a fonte comum.
 - [documentacao.md](documentacao.md) define classificação e organização
   documental;
 - [uso-de-llm.md](uso-de-llm.md) define o uso eficiente e seguro de LLM em
-  qualquer componente do Ecossistema DEV.
+  qualquer componente do Ecossistema DEV e a arquitetura obrigatória de
+  interfaces conversacionais, com correção de defeitos, testes e evidências.
+
+Projetos novos recebem o roteamento pelo template de `AGENTS.md`, conforme
+[criacao-de-projetos.md](criacao-de-projetos.md). Projetos existentes corretamente
+vinculados ao DevTOLAS consultam a mesma fonte vigente nas próximas intervenções
+pertinentes, conforme [metodo-de-desenvolvimento.md](metodo-de-desenvolvimento.md).
+Esse vínculo depende de roteamento local acessível; a presença do DevTOLAS no
+ecossistema não implica carregamento automático. A vigência não autoriza
+modificações em massa nem certifica a conformidade dos consumidores.
 
 ## Limites da versão inicial
 

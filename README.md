@@ -31,7 +31,10 @@ DevTOLAS/
 │   ├── evolucao-do-conhecimento.md
 │   ├── sistema-de-desenvolvimento.md
 │   ├── criacao-de-projetos.md
-│   └── continuidade.md
+│   ├── continuidade.md
+│   ├── estado-vigente.md
+│   ├── handoff-contextos.md
+│   └── uso-de-llm.md
 └── templates/
     └── projeto/
         ├── AGENTS.md.template
@@ -49,8 +52,9 @@ DevTOLAS/
 ## Estado atual
 
 O DevTOLAS é a fonte da verdade da metodologia comum utilizada pelos projetos
-consumidores. Os workspaces ativos usam o projeto específico e o DevTOLAS como
-referência de método.
+consumidores. Cada workspace ativo contém somente a raiz do projeto; quando uma
+norma comum for necessária, o `AGENTS.md` local aponta para o documento
+específico do DevTOLAS como referência externa.
 
 Integrações com ferramentas, skills e automações pertencem à aplicação
 operacional. Elas serão adicionadas apenas quando houver necessidade concreta e

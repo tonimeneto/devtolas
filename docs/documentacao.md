@@ -107,3 +107,10 @@ lugares:
 ```text
 uma regra → uma fonte normativa → referências onde necessário
 ```
+
+## Estado e vigência
+
+Documentos de decisão e estado devem distinguir conteúdo vigente, substituído e
+histórico. Projetos que precisem de estado operacional persistido seguem o
+contrato mínimo de [estado-vigente.md](estado-vigente.md); não se cria um arquivo
+de estado apenas para completar uma estrutura.

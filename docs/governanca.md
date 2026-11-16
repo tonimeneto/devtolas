@@ -26,14 +26,21 @@ a investigação ao necessário para esclarecer o escopo.
 Uma sessão de desenvolvimento deve operar em um único projeto ativo. A troca de
 projeto encerra o contexto anterior e exige um novo contexto.
 
-## Autoridade metodológica e carregamento de contexto
+## Precedência técnica, autoridade e autorização
 
 O DevTOLAS é a autoridade metodológica do Ecossistema DEV. Essa autoridade não
 significa que sua documentação seja herdada ou carregada automaticamente pelo
 Codex apenas porque o DevTOLAS existe no ecossistema ou em uma raiz do
 workspace.
 
-A ordem técnica de carregamento do Codex é progressiva:
+O Codex determina a precedência técnica de suas instruções. No uso local, ele
+combina a orientação global com os `AGENTS.md` encontrados da raiz do projeto
+até o diretório atual; instruções mais próximas do diretório de trabalho são
+mais específicas. A tarefa atual expressa a intenção e a autorização do usuário
+dentro dos limites superiores de segurança e da plataforma.
+
+O Ecossistema DEV não redefine essa precedência. Ele define a matéria de cada
+fonte e como recuperar evidência. O carregamento operacional é progressivo:
 
 ```text
 global pessoal do Codex
@@ -48,17 +55,25 @@ O `AGENTS.md` de um projeto deve funcionar como roteador de contexto, não como
 repositório de todo o conhecimento. O Codex não deve consultar toda a
 documentação disponível por padrão.
 
-Depois de carregadas as fontes aplicáveis, respeitar esta autoridade:
+Cada fonte responde somente por sua matéria:
 
-1. segurança, privacidade e autorização do usuário;
-2. método comum do DevTOLAS;
-3. instruções do `AGENTS.md` do projeto ativo;
-4. documentação oficial do projeto;
-5. código, testes e estado observável;
-6. tarefa atual.
+- a tarefa atual define objetivo, resultado e autoridade concedida;
+- o `AGENTS.md` ativo controla comportamento recorrente no seu escopo;
+- o DevTOLAS é canônico para o método comum;
+- a documentação do projeto é canônica para decisões e conhecimento do produto;
+- o estado vigente situa o trabalho atual;
+- código, testes, configuração e ambientes fornecem evidência observável;
+- skills conduzem procedimentos e scripts garantem operações determinísticas.
 
-Uma instrução local pode adaptar o método ao contexto, mas não pode reduzir
-proteções de segurança, privacidade ou isolamento.
+Uma tarefa pode substituir legitimamente uma decisão ou orientação que esteja
+dentro da autoridade do usuário, desde que a mudança seja explícita, atualize a
+fonte canônica e registre o que foi substituído. Segurança, privacidade,
+políticas da plataforma e limites de autoridade não podem ser reduzidos por
+inferência.
+
+Resultado necessário não equivale a autoridade genérica para qualquer ação. Se
+o resultado depender de operação destrutiva, externa, em produção ou fora do
+escopo concedido, apresentar o impedimento ou obter autorização compatível.
 
 Conflitos entre documentação e comportamento observado devem ser comunicados e
 resolvidos de forma explícita. Não corrigir silenciosamente uma fonte com base
@@ -97,48 +112,16 @@ Deve permanecer no projeto:
 - credenciais e identificadores;
 - decisões que dependam do contexto local.
 
-## Contrato de classificação do contexto
+## Classificação do contexto
 
-Antes de criar ou decidir onde armazenar uma instrução, documento, skill ou
-script, classificar a informação e usar o destino correspondente:
+A taxonomia, o destino conceitual de cada tipo de informação e a regra de fonte
+normativa única pertencem exclusivamente a
+[documentacao.md](documentacao.md). Esta governança apenas exige que a
+classificação seja aplicada antes de criar ou mover artefatos.
 
-```text
-Preferência pessoal ou comportamento universal do Codex
-    → `C:\Users\anton\.codex\AGENTS.md`
-
-Administração de `D:\MeusArquivos`
-    → `D:\MeusArquivos\AGENTS.md`
-
-Método comum e normas transversais de engenharia
-    → DevTOLAS
-
-Comportamento específico do Codex em um projeto
-    → `Projeto\AGENTS.md`
-
-Conhecimento permanente do produto
-    → `Projeto\docs`
-
-Procedimento operacional reutilizável
-    → `Skill\SKILL.md`
-
-Operação mecânica e determinística usada por uma skill
-    → `Skill\scripts`
-```
-
-Essas camadas devem referenciar a fonte adequada em vez de duplicar seu
-conteúdo. Skills descrevem procedimentos reutilizáveis; scripts executam as
-partes mecânicas e determinísticas desses procedimentos.
-
-Normas transversais de engenharia aplicáveis a todos os projetos pertencem ao
-DevTOLAS, não ao global pessoal do Codex nem aos projetos individuais.
-
-A arquitetura futura pretendida para workspaces de projeto utiliza uma única
-raiz. Durante a transição, a estrutura atual de duas raízes permanece válida e
-não implica carregamento automático da documentação do DevTOLAS.
-
-A classificação detalhada e as regras de fonte normativa única estão em
-[documentacao.md](documentacao.md). Componentes que utilizam modelos de
-linguagem devem seguir [uso-de-llm.md](uso-de-llm.md).
+Workspaces de projetos usam uma única raiz, a do projeto ativo, conforme
+[criacao-de-projetos.md](criacao-de-projetos.md). Componentes que utilizam
+modelos de linguagem seguem [uso-de-llm.md](uso-de-llm.md).
 
 ## Segurança e privacidade
 
@@ -248,6 +231,8 @@ projeto.
 
 Uma melhoria comum deve ser proposta e tratada no próprio repositório DevTOLAS,
 com justificativa e estado conforme `docs/evolucao-do-conhecimento.md`.
+Registros administrativos, como aliases do ecossistema, pertencem à Governança
+e não criam exceção de escrita neste repositório.
 
 ## Critérios de conclusão
 
@@ -260,3 +245,8 @@ Antes de encerrar uma mudança, confirmar conforme o risco:
 - ausência de segredos na saída e no Git;
 - isolamento entre projetos mantido;
 - estado final e pendências comunicados.
+
+Quando a mudança substituir responsabilidade existente, confirmar também que a
+implementação anterior e seus consumidores foram identificados e que código,
+testes, referências e documentação foram reconciliados. Coexistência deve ser
+intencional e justificada.
